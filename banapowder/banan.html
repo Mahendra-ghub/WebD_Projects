@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addon Groups - Banana Powder Export</title>
+    <style>
+        /* Global Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f5;
+            color: #333;
+            background-image: url('farm.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('jagan.jpg') no-repeat center center;
+            background-size: cover;
+            opacity: 0.6;
+            z-index: 0;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: rgba(0, 100, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            position: relative;
+            border-bottom: 5px solid #2d572c;
+            z-index: 1;
+        }
+
+        header img {
+            max-width: 120px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Info Section Styling */
+        .info, .achievements, .products, .team, .form-section {
+            position: relative;
+            z-index: 1;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            max-width: 900px;
+            margin: 30px auto;
+            border-radius: 8px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Achievements Section */
+        .achievements {
+            background-color: rgba(234, 247, 228, 0.8);
+            background-image: url('achievement.png');
+            background-size: cover;
+        }
+
+        /* Products Section Styling */
+        .products img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        /* Team Section Styling */
+        .team {
+            background-image: url('startup.png');
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 60px 30px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .team-logo {
+            flex: 1;
+            text-align: center;
+        }
+
+        .team-logo img {
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .team-content {
+            flex: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .team-member {
+            margin-bottom: 30px;
+        }
+
+        .team-member h3 {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .team-member p {
+            font-style: italic;
+            color: #ddd;
+            margin: 5px 0;
+        }
+
+        .team-member span {
+            display: block;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Form Section Styling */
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #2d572c;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #238b45;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2d572c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-top: 5px solid #1e3c22;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <!-- Header Section -->
+    <header>
+        <img src="banana.png" alt="Addon Groups Logo">
+        <h1>Addon Groups</h1>
+        <p class="tagline">Adding Purity to Your Life</p>
+        <p>Banana Powder - Rs. 100 per kg</p>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="info">
+        <h2>About Us</h2>
+        <p>At Addon Groups, we provide the finest quality banana powder for both domestic and export markets. Our powder is made from premium bananas and packed under the highest safety standards.</p>
+        <p><strong>We deliver worldwide</strong>, thanks to our international contacts and efficient logistics.</p>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <h2>Our Achievements</h2>
+        <ul>
+            <li>120 tons of banana powder delivered internationally.</li>
+            <li>100 tons delivered across India.</li>
+        </ul>
+        <p>We ensure quality and timely delivery across the globe.</p>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product-item">
+            <h3>Banana Powder</h3>
+            <img src="banana.png" alt="Banana Powder">
+            <p>Premium quality banana powder, perfect for various applications.</p>
+        </div>
+        <div class="product-item">
+            <h3>Fresh Fruits</h3>
+            <img src="fruits.png" alt="Fresh Fruits">
+            <p>Freshly sourced fruits to complement our banana powder.</p>
+        </div>
+        <div class="product-item">
+            <h3>Cow Products</h3>
+            <img src="cow.jpg" alt="Cow Products">
+            <p>Additional cow-related products and benefits.</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="team-logo">
+            <img src="farm.jpg" alt="Company Logo">
+        </div>
+        <div class="team-content">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <h3><span>Akash Yadav</span></h3>
+                <p>CEO - Leads the company with a vision to make Addon Groups a global brand.</p>
+            </div>
+            <div class="team-member">
+                <h3><span>Mahendra</span></h3>
+                <p>Co-Founder/IT Managing director - Assists in strategic planning and company growth.</p>
+            </div>
+            <div class="team-member">
+                <h3><span>Kishan</span></h3>
+                <p>Deputy CEO - Oversees daily operations to ensure smooth production and delivery.</p>
+            </div>
+            <div class="team-member">
+                <h3><span>Kalyan Babu</span></h3>
+                <p>IT Consultant - Ensures our technology is secure and up-to-date.</p>
+            </div>
+            <div class="team-member">
+                <h3><span>Jyotshna priya</span></h3>
+                <p>International Division - Manages international sales and client relations.</p>
+            </div>
+            <div class="team-member">
+                <h3><span>Ashwitha</span></h3>
+                <p>HR Consultant - Handles all HR-related functions and team development.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Export Registration Form Section -->
+    <section class="form-section">
+        <h2>Export Registration Form</h2>
+        <form id="exportForm" action="" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="quantity">Quantity Needed (in tons):</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Addon Groups. All rights reserved.</p>
+        <p>Location: Ananthapur, Andhra Pradesh</p>
+        <p>Contact: 6305483661 | Email: akashyadav@gmail.com</p>
+    </footer>
+</body>
+
+</html>
